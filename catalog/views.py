@@ -1,9 +1,10 @@
 import datetime
+
 from django.shortcuts import render
 from django.utils import timezone
-from .tasks import send_mail
 
 from .forms import EmailForm
+from .tasks import send_mail
 
 
 def send_reminder(request):
