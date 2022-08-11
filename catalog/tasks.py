@@ -14,6 +14,7 @@ def send_mail(text, email):
     django_send_mail("Reminder", text, 'admin@example.com', [email])
 
 
+@shared_task
 def pars():
     page = 'http://quotes.toscrape.com/'
     list_page = [page]
@@ -46,7 +47,3 @@ def pars():
             except:
                 text = "All quotes are over. It's time to add new ones."
                 django_send_mail('Notice', text, 'admin@example.com', ['writer@example.com'])
-
-
-def non():
-    django_send_mail("Reminder", 'всё нормально', 'admin@example.com', ['email@example.com'])
