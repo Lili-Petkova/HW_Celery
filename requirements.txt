@@ -16,6 +16,7 @@ click-repl==0.2.0
 decorator==5.1.1
 Deprecated==1.2.13
 Django==4.0
+django-celery-results==2.4.0
 executing==0.9.1
 flake8==4.0.1
 flake8-builtins==1.5.3
